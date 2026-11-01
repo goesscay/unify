@@ -37,7 +37,7 @@ Conventions: UUID v7 primary keys; `tenant_id` on **every** tenant-owned table (
 - `api_keys(tenant_id, name, hash, scopes, expires_at)`
 
 ### B. Catalogue and knowledge (versioned)
-- `erp_products(id, code, name, vendor, versions jsonb)`: global
+- `erp_products(id, code, name, publisher, versions jsonb)`: global
 - `adapters(id, erp_product_id, version, status, capabilities jsonb)`
 - `erp_entities(adapter_id, code, name, load_order, schema jsonb)`; `erp_fields(entity_id, code, type, required, ref_entity, constraints jsonb)`
 - `knowledge_packs(id, scope[global|tenant], owner_tenant_id, erp_product_id, kind[localisation|industry|methodology], version, status)`

@@ -4,7 +4,7 @@
 
 | # | Risk | L | I | Mitigation | Owner |
 |---|---|---|---|---|---|
-| R1 | ERP vendors ship native AI implementation tooling (SAP already has) | H | H | Mid-market ERPs first; cross-ERP value; list on vendor marketplaces; partner with vendors | Founder |
+| R1 | ERP platforms ship native AI implementation tooling (SAP already has) | H | H | Mid-market ERPs first; cross-ERP value; list on ERP marketplaces | Founder |
 | R2 | Fast-moving startup competitor (superglue, Tato) captures the partner segment | M | H | Narrow + deep wedge; governance + customer portal; speed to design partners | Founder |
 | R3 | ERP API gaps for setup/config | M | H | Phase 0 spike; use bulk/config-package import; scope config to API-supported areas | Tech lead |
 | R4 | AI mapping quality insufficient on messy real data | M | H | Deterministic rules first; mapping memory; eval gold set; confidence thresholds; human review | AI lead |
@@ -25,7 +25,7 @@
 | A3 | Source data mostly arrives as Excel/CSV (or Tally/QBO exports) | Sample-file review | 0 |
 | A4 | Key configuration areas are API-accessible on ERP #1 | Technical spike | 0 |
 | A5 | Measurable financial incentive and willingness to pay at the hypothesised price | Pricing questions, LOIs, pilot conversion | 0 / 4 |
-| A6 | Partners will pay for a tool that ERP vendors may partly offer for free (native tooling) | Interviews: compare against Copilot/Cloud ALM/native import tools | 0 |
+| A6 | Partners will pay for a tool when ERPs include some free native tooling | Interviews: compare against Copilot/Cloud ALM/native import tools | 0 |
 | A7 | Migration + configuration is ≥ 25% of project effort for the ICP | Collect project hour breakdowns | 0 |
 | A8 | Customers will use a portal to fix their own data exceptions | Prototype tests with end customers | 0 / 2 |
 | A9 | ≥ 85% mapping accuracy is achievable on real files | Eval gold set | 0 / 2 |
@@ -34,7 +34,7 @@
 
 Answers to these will change the plan. Please respond when ready.
 
-1. ~~**First customer type.**~~ **Answered 1 Nov 2026: implementation partners only.** ERP vendors are not customers.
+1. ~~**First customer type.**~~ **Answered 1 Nov 2026: implementation partners.**
 2. **First ERP.** Which ERP ecosystem does your network know best: Business Central, Odoo, SAP Business One, NetSuite, Tally/Zoho-centric Indian ERPs, or another? Do you have a specific implementation partner in mind as design partner #1?
 3. **Your background.** Are you an ERP practitioner yourself (which ERPs and modules)? This decides who authors the first knowledge packs.
 4. **Geography.** Is the first market India, GCC, UK/EU or US? This drives hosting region, localisation (GST/VAT) and pricing.

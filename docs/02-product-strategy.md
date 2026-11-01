@@ -7,25 +7,24 @@
 - **Positioning statement:** *For ERP implementation partners who lose margin to repetitive migration, configuration and testing work, UNIFY is an AI implementation engine that executes that work through governed connectors with full traceability. Unlike project-tracking tools (Rocketlane, GUIDEcx) or single-ERP native tools, UNIFY does the work, across ERPs, and turns each partner's know-how into reusable automation.*
 - **Tagline (existing):** One engine. Any product. Automated implementation.
 
-## 2. Key strategic decision: who is the customer?
+## 2. Who is the customer?
 
-**Decision (founder, 1 Nov 2026): UNIFY serves ERP implementation partners only.** The blueprint's reference to ERP SaaS vendors as the primary buyer was a mistake and is superseded by this document. Wherever the blueprint says "vendor" as the customer or tenant, read "implementation partner".
+**UNIFY's customers are ERP implementation partners**: SIs, VARs and consultancies that implement ERP for their own clients.
 
-Why this is the right choice:
+Why partners:
 
-| | ERP vendor as customer (rejected) | Implementation partner as customer (chosen) |
-|---|---|---|
-| Who builds the connector | The vendor helps; one adapter serves one vendor | UNIFY builds it; one adapter serves *hundreds of partners* |
-| Number of buyers per adapter | 1 | 100s–1000s |
-| Sales cycle | 6–12 months, product and engineering approvals | 1–3 months, practice head or founder decides |
-| Economic pain | Indirect (time-to-value, churn) | Direct (consultant hours = margin on fixed-price deals) |
-| Risk | Vendor builds it in-house | ERP platform adds native AI tooling |
+| | Implementation partner |
+|---|---|
+| Connector economics | UNIFY builds each ERP adapter once; it serves *hundreds of partners* |
+| Sales cycle | 1–3 months; the practice head or founder decides |
+| Economic pain | Direct: consultant hours = margin on fixed-price deals |
+| Volume | Tens of thousands of partner firms worldwide |
 
 **Consequences for the product:**
 - One tenant type: the **implementation partner**. Under it sit the partner's end customers (client accounts) and their projects.
-- **UNIFY builds and owns all ERP adapters and base knowledge packs.** There is no vendor workspace and no vendor-published adapters.
-- The blueprint's "ERP Vendor Admin" role becomes **Partner Admin**. The "Vendor Dashboard" (Part J1/J2) becomes the partner's internal **Delivery Control Tower**.
-- ERP vendors still matter as **platforms** (their APIs and sandboxes), **marketplaces** (AppSource, Odoo Apps, SuiteApp) and **ecosystem events** where partners gather. We list there and co-market, but we don't sell to them.
+- **UNIFY builds and owns all ERP adapters and base knowledge packs.** Partners add their own packs on top.
+- Roles: **Partner Admin**, delivery and project roles, and the end customer's users. The partner's portfolio view is the internal **Delivery Control Tower**.
+- ERP marketplaces (AppSource, Odoo Apps, SuiteApp) and ERP community events are distribution channels to reach partners.
 - The customer segments are: mid-market partners (beachhead) → large global SIs (enterprise edition, later).
 
 ## 3. Ideal customer profile (beachhead)
@@ -43,7 +42,7 @@ The blueprint's MVP covers all eight modules in six months with six people. That
 
 ### "UNIFY Migration & Configuration Workbench" for one ERP
 
-1. **Data migration factory**: upload legacy extracts (Excel/CSV, later Tally/QuickBooks/legacy DB), profile, AI-map, apply deterministic validation, cleanse, approve, load to the ERP sandbox, reconcile. Master entities: customers, vendors, items, chart of accounts, opening balances, and later open AR/AP and inventory on hand.
+1. **Data migration factory**: upload legacy extracts (Excel/CSV, later Tally/QuickBooks/legacy DB), profile, AI-map, apply deterministic validation, cleanse, approve, load to the ERP sandbox, reconcile. Master entities: customers, suppliers, items, chart of accounts, opening balances, and later open AR/AP and inventory on hand.
 2. **Configuration from templates**: apply the partner's standard setup (posting groups, payment terms, tax setup, number series, dimensions) via API, read back and verify, and produce a "configuration workbook" as evidence.
 3. **Governance layer**: projects, approvals, audit, exceptions, evidence. This is enough project structure to run the workbench, not a full PSA.
 4. **Customer portal**: the customer uploads data, fixes exceptions and approves mappings and reconciliations. This removes the email-and-Excel ping-pong, which is a major hidden time sink.
@@ -86,7 +85,7 @@ Wedge → **Test & Readiness** (requirement-linked test generation and execution
 
 | Risk | Response |
 |---|---|
-| ERP vendor ships native AI implementation tooling (SAP already has) | Start with mid-market ERPs; be cross-ERP; partner with vendors (ISV/marketplace listings) |
+| An ERP platform ships native AI implementation tooling (SAP already has) | Start with mid-market ERPs; be cross-ERP; list on ERP marketplaces |
 | superglue or another startup moves faster | Narrow and deep beats broad: one ERP done excellently, plus governance and customer portal |
 | Partners see UNIFY as reducing billable hours | Sell **margin on fixed-price work and capacity** ("deliver 30% more projects with the same team"), not "fewer hours" |
 | Data sensitivity blocks adoption | Sandbox-first, regional hosting, SOC 2 early, private deployment option for large SIs |

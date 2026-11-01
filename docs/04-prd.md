@@ -1,6 +1,6 @@
 # 04 — Product Requirements Document (PRD)
 
-Version 0.1 · builds on Part A of the blueprint, re-scoped to the wedge ([02-product-strategy.md](02-product-strategy.md)). **Customers are ERP implementation partners only.** The blueprint's "ERP Vendor Admin" role and the "Vendor Dashboard" (Parts J1/J2) map to the Partner Admin role and the partner's internal Delivery Control Tower below.
+Version 0.1 · builds on Part A of the blueprint, re-scoped to the wedge ([02-product-strategy.md](02-product-strategy.md)). **Customers are ERP implementation partners.**
 
 ## 1. Problem statement
 
@@ -95,7 +95,7 @@ Priority: **P0** = MVP, **P1** = MVP+ / GA, **P2** = later.
 | MIG-7 | Load plan: dependency-ordered entities, batches, dry-run, idempotency keys, retry, rollback where the ERP supports deletes in sandbox | P0 |
 | MIG-8 | Reconciliation: counts, financial totals, sample field-level checks; variance sign-off | P0 |
 | MIG-9 | Record-level lineage: source row → transformed record → target ID | P0 |
-| MIG-10 | Entities: customers, vendors, items, chart of accounts, dimensions, opening balances (GL); then open AR/AP, inventory on hand, fixed assets | P0 / P1 |
+| MIG-10 | Entities: customers, suppliers, items, chart of accounts, dimensions, opening balances (GL); then open AR/AP, inventory on hand, fixed assets | P0 / P1 |
 | MIG-11 | Source connectors: Tally export parser, QuickBooks Online API, generic DB/ODBC extract via agent | P1 / P2 |
 | MIG-12 | Mock and cutover rehearsals: re-run the full migration on a new data drop with the same approved rules; delta report | P1 |
 

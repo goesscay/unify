@@ -21,7 +21,7 @@ Start date assumed: **2 Nov 2026**. Rebaseline after Phase 0.
 | Week | Product / business | Technical |
 |---|---|---|
 | 1 | Finalise ICP and interview list (30–40 implementation partners); trademark check; register company and domain | Repo scaffold, CI, local stack (Postgres, Temporal, MinIO, Odoo docker); ADRs 001–009 |
-| 2–3 | 8–10 interviews; collect anonymised sample files and setup checklists | BC sandbox spike: auth, metadata, create customers/vendors/items, configuration packages, throttling |
+| 2–3 | 8–10 interviews; collect anonymised sample files and setup checklists | BC sandbox spike: auth, metadata, create customers/suppliers/items, configuration packages, throttling |
 | 4 | Synthesise; pick ERP #1 definitively; draft LOI | Mapping prototype: 50 real sample files → BC schema; measure accuracy across 2–3 models |
 | 5–6 | Clickable Figma prototype of migration workbench + customer portal; demo to interviewees | Thin E2E spike: CSV → mapping → validation → BC sandbox load → count reconciliation (CLI quality) |
 | 7 | Sign **2 design-partner LOIs** (pilot, data access, baseline measurement) | Eval set v0; architecture rebaseline |

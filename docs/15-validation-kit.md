@@ -47,7 +47,7 @@ For each interview record: ERP, firm size, project volume, pain scores, current 
 
 | Criterion | Target |
 |---|---|
-| Entities migrated to sandbox | ≥ 3 (customers, vendors, items) |
+| Entities migrated to sandbox | ≥ 3 (customers, suppliers, items) |
 | Mapping top-1 accuracy on partner files | ≥ 75% (PoC), ≥ 85% (MVP) |
 | Lineage | 100% records traceable or in exceptions |
 | Duplicate creation on retry | 0 |

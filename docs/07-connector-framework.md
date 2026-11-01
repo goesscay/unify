@@ -92,7 +92,7 @@ Customers migrate *from* somewhere. The source parsers for the most common mid-m
 | SFTP | P1 | Legacy file exchange |
 | On-prem agent (outbound tunnel) | P2 | For on-prem ERPs/sources; needed for enterprise SIs |
 | UI automation | P2 | Last resort, strongly governed |
-| MCP server (UNIFY exposes tools to external agents; consumes vendor MCP servers) | P2 | Strategic: ERP vendors are publishing MCP servers. Adapters can wrap them later. |
+| MCP server (UNIFY exposes tools to external agents; consumes ERP MCP servers) | P2 | Strategic: ERP platforms are publishing MCP servers. Adapters can wrap them later. |
 
 ## 6. Adapter development process
 

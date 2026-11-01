@@ -2,13 +2,13 @@
 
 ## 1. Motion
 
-**Founder-led, design-partner-first sales into ERP implementation partners**, then ecosystem-led growth (ERP marketplaces and partner events), then an enterprise motion into large global SIs. ERP vendors are never the buyer; they are where partners gather.
+**Founder-led, design-partner-first sales into ERP implementation partners**, then ecosystem-led growth (ERP marketplaces and partner events), then an enterprise motion into large global SIs.
 
 | Stage | Months | Motion | Target |
 |---|---|---|---|
 | Design partners | 0–7 | Founder sells to their network; free pilot → paid | 2–3 partners |
 | Early adopters | 7–12 | Case-study-led outbound + community | 10–15 partners |
-| Ecosystem | 12–24 | AppSource / Odoo Apps / SuiteApp listings; vendor partner events; co-marketing | 50–80 partners |
+| Ecosystem | 12–24 | AppSource / Odoo Apps / SuiteApp listings; ERP community and partner events | 50–80 partners |
 | Enterprise SIs | 18+ | Practice-level pilots in large global SIs; private deployment | 2–3 enterprise deals |
 
 ## 2. Messaging by persona
@@ -26,7 +26,7 @@
 - **ERP communities**: Dynamics Communities (BCUG/DynamicsCon, Directions EMEA/ASIA), Odoo Experience, SAP B1 partner summits, NetSuite SuiteWorld
 - **Content**: "ERP migration playbooks" (BC from Tally, BC from QuickBooks), templates, free mapping-checker tool as lead magnet
 - **Marketplaces**: Microsoft AppSource (BC), Odoo Apps store, NetSuite SuiteApp marketplace
-- **Partner referrals**: partner-to-partner, and vendor partner managers
+- **Partner referrals**: partner-to-partner referrals and ERP community groups
 
 ## 4. Sales process (design-partner phase)
 

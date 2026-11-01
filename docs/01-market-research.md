@@ -28,19 +28,17 @@
 - **Overruns are the norm.** Panorama Consulting surveys report that most ERP projects take longer than planned (~61%) and roughly half go over budget (~53%). Average projects ran ~US$7 m over ~18 months in the surveyed population (skewed to larger firms).
 - **Data migration is the most underestimated workstream.** Estimates range from 10–15% of cost to much higher shares of the problems found. Every implementation repeats it, and it is still done in Excel, with VLOOKUPs and with consultants on the phone with customers.
 - **Repeatability is high, but reuse is low.** Partners implement the same ERP dozens of times a year with the same master entities, the same setup sequence and the same test scripts. Yet each project restarts from spreadsheets. Knowledge leaves with the consultant.
-- **Partner margins are pressured.** Customers want fixed-price, faster implementations. Vendors (SAP, Microsoft, Oracle) push "fast-track" methods. Partners that cannot industrialise delivery lose margin.
+- **Partner margins are pressured.** Customers want fixed-price, faster implementations. SAP, Microsoft and Oracle push "fast-track" methods. Partners that cannot industrialise delivery lose margin.
 
 ## 3. Buyer segments
 
 | Segment | Examples | Pain | Willingness to buy tooling | Fit for UNIFY |
 |---|---|---|---|---|
 | **A. Mid-market ERP implementation partners / VARs** (10–500 consultants) | Dynamics 365 BC partners, NetSuite Solution Providers, SAP B1 partners, Odoo partners | Margin on fixed-price projects; consultant scarcity; repeat work | High: they buy tools to protect margin, and decisions are fast (founder/practice head) | **Best beachhead** |
-| B. ERP software vendors with in-house implementation teams | Mid-size vertical ERPs, regional ERPs (e.g., Indian ERPs) | Time-to-value, onboarding cost, churn | Long sales cycle; one adapter serves one vendor | **Not a target customer** (founder decision). Engage only as ecosystem/marketplace partners. |
-| C. Large global SIs | Accenture, Deloitte, Infosys, TCS, Wipro, Capgemini | Scale, consistency | Build their own tooling, long procurement, demand on-prem | Later: enterprise edition / OEM |
-| D. ERP vendors' own programs | SAP Cloud ALM migration assistants, Microsoft FastTrack, NetSuite SuiteSuccess | Want partners to deliver faster | They are platforms and potential competitors | Partner with them, don't fight them |
-| E. End customers doing self-implementation | SMBs implementing Odoo/BC themselves | No expertise | Low budget | Not a target; served indirectly |
+| B. Large global SIs | Accenture, Deloitte, Infosys, TCS, Wipro, Capgemini | Scale, consistency | Build their own tooling, long procurement, demand on-prem | Later: enterprise edition |
+| C. End customers doing self-implementation | SMBs implementing Odoo/BC themselves | No expertise | Low budget | Not a target; served indirectly through their partner |
 
-**Conclusion:** the original blueprint named segment B (ERP vendors) by mistake. **Founder decision (1 Nov 2026): UNIFY serves implementation partners only**: segment A first, then segment C (large SIs) through an enterprise edition. ERP vendors (B, D) are platforms, marketplaces and ecosystem partners, not buyers. See [02-product-strategy.md](02-product-strategy.md).
+**Conclusion:** UNIFY serves implementation partners: segment A first, then segment B (large SIs) through an enterprise edition. See [02-product-strategy.md](02-product-strategy.md).
 
 ## 4. Competitive landscape
 
@@ -65,20 +63,20 @@
 | ERP-native tooling | SAP Cloud ALM + Joule for Consultants, BC RapidStart/Configuration Packages, NetSuite SuiteSuccess/CSV import, Odoo import | Free with the ERP, single-ERP, not AI-orchestrated. UNIFY must *use* these as execution channels |
 | General AI | ChatGPT/Claude/Copilot used ad hoc by consultants | The "do nothing" competitor: consultants paste spreadsheets into chatbots. UNIFY wins on governance, traceability, execution and reuse |
 
-### 4.3 The platform threat: ERP vendors moving in
+### 4.3 The platform threat: SAP, Oracle and Microsoft moving in
 
 - **SAP (Sapphire 2026)** launched AI migration and modernization assistants built on **SAP Cloud ALM**, requiring Joule for Consultants/Developers. Secondary sources cite ~35% migration effort reduction (unverified). SAP and Palantir partnered on AI-supported data migration, with Accenture as the lead services partner.
 - **Oracle** is embedding agents in Fusion and NetSuite (mostly for operations, less for implementation).
 - **Microsoft** is pushing Copilot into Dynamics 365, including some setup and data assistance.
 
-**Implication:** do not start with SAP S/4HANA. SAP will own AI tooling for its large-enterprise migrations. Mid-market ERPs (Business Central, NetSuite, Odoo, Acumatica, Sage, SAP B1) have weaker native implementation tooling and many more partners. **Cross-ERP neutrality** is something no ERP vendor can offer, and partners who implement two or three ERPs value it.
+**Implication:** do not start with SAP S/4HANA. SAP will own AI tooling for its large-enterprise migrations. Mid-market ERPs (Business Central, NetSuite, Odoo, Acumatica, Sage, SAP B1) have weaker native implementation tooling and many more partners. **Cross-ERP neutrality** is something no single-ERP tool can offer, and partners who implement two or three ERPs value it.
 
 ## 5. White space: where UNIFY wins
 
 1. **Execution, not tracking.** Rocketlane and GUIDEcx track tasks; UNIFY performs the migration, configuration and tests through governed connectors.
 2. **Governed AI.** Approval gates, record-level traceability, reconciliation and audit, which is what partners need to put AI near customer financial data.
 3. **Cross-ERP, partner-owned knowledge.** A partner's playbooks, mapping templates, validation rules and test packs become reusable, versioned IP inside UNIFY, across every ERP they implement.
-4. **The mid-market, which the ERP vendors and big data-migration tools underserve.**
+4. **The mid-market, which native ERP tooling and big data-migration tools underserve.**
 5. **India + emerging markets.** Large partner ecosystems (SAP B1, Dynamics, Odoo, Tally/Zoho), price-sensitive, GST/e-invoicing complexity. This is a natural home market for a lean, India-built team, with global pricing.
 
 ## 6. Key market takeaways for planning
