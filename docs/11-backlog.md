@@ -28,7 +28,7 @@ Re-prioritised from Part H of the blueprint for the wedge. P0 = MVP (Phases 1–
 | E20 | Source connectors (Tally, QBO) | P1 | 5 |
 | E21 | Adapter #2 | P1 | 5 |
 | E22 | SSO/SAML, SCIM, data residency (UK) | P1 | 5 |
-| E23 | Vendor tenant + partner network publishing | P2 | 6 |
+| E23 | Enterprise edition for large SIs (private deployment, multi-practice) | P2 | 6 |
 | E24 | Hypercare | P2 | 6 |
 | E25 | Marketplace for packs | P2 | 6 |
 

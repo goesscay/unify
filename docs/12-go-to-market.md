@@ -2,14 +2,14 @@
 
 ## 1. Motion
 
-**Founder-led, design-partner-first sales into ERP implementation partners**, then ecosystem-led growth (ERP marketplaces, vendor partner programmes), then a partner-of-partners motion via ERP vendors.
+**Founder-led, design-partner-first sales into ERP implementation partners**, then ecosystem-led growth (ERP marketplaces and partner events), then an enterprise motion into large global SIs. ERP vendors are never the buyer; they are where partners gather.
 
 | Stage | Months | Motion | Target |
 |---|---|---|---|
 | Design partners | 0–7 | Founder sells to their network; free pilot → paid | 2–3 partners |
 | Early adopters | 7–12 | Case-study-led outbound + community | 10–15 partners |
 | Ecosystem | 12–24 | AppSource / Odoo Apps / SuiteApp listings; vendor partner events; co-marketing | 50–80 partners |
-| Vendor channel | 18+ | ERP vendors license UNIFY for their partner networks | 2–3 vendor deals |
+| Enterprise SIs | 18+ | Practice-level pilots in large global SIs; private deployment | 2–3 enterprise deals |
 
 ## 2. Messaging by persona
 

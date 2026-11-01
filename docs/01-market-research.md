@@ -21,7 +21,7 @@
 | Firms with 10–500 consultants (realistic SaaS buyers) | ~6,000–10,000 |
 | Average projects per firm per year | 10–60 |
 | Target ACV | US$15k–60k |
-| **Serviceable market (SAM)** | **~US$150–400 m ARR** for the mid-market partner segment alone, before ERP vendors and large SIs |
+| **Serviceable market (SAM)** | **~US$150–400 m ARR** for the mid-market partner segment alone, before large SIs |
 
 ## 2. The problem, quantified
 
@@ -35,12 +35,12 @@
 | Segment | Examples | Pain | Willingness to buy tooling | Fit for UNIFY |
 |---|---|---|---|---|
 | **A. Mid-market ERP implementation partners / VARs** (10–500 consultants) | Dynamics 365 BC partners, NetSuite Solution Providers, SAP B1 partners, Odoo partners | Margin on fixed-price projects; consultant scarcity; repeat work | High: they buy tools to protect margin, and decisions are fast (founder/practice head) | **Best beachhead** |
-| B. ERP SaaS vendors with in-house implementation teams | Mid-size vertical ERPs, regional ERPs (e.g., Indian ERPs) | Time-to-value, onboarding cost, churn | Medium–high, but a long sales cycle; one adapter serves one vendor | Strong second segment; also a channel (vendor recommends UNIFY to its partners) |
+| B. ERP software vendors with in-house implementation teams | Mid-size vertical ERPs, regional ERPs (e.g., Indian ERPs) | Time-to-value, onboarding cost, churn | Long sales cycle; one adapter serves one vendor | **Not a target customer** (founder decision). Engage only as ecosystem/marketplace partners. |
 | C. Large global SIs | Accenture, Deloitte, Infosys, TCS, Wipro, Capgemini | Scale, consistency | Build their own tooling, long procurement, demand on-prem | Later: enterprise edition / OEM |
 | D. ERP vendors' own programs | SAP Cloud ALM migration assistants, Microsoft FastTrack, NetSuite SuiteSuccess | Want partners to deliver faster | They are platforms and potential competitors | Partner with them, don't fight them |
 | E. End customers doing self-implementation | SMBs implementing Odoo/BC themselves | No expertise | Low budget | Not a target; served indirectly |
 
-**Conclusion:** the original blueprint targets segment B. The founder's stated goal ("solution for all major ERP implementation companies") is segment A, then C. This plan targets **A first, B second**, with one shared product. See [02-product-strategy.md](02-product-strategy.md).
+**Conclusion:** the original blueprint named segment B (ERP vendors) by mistake. **Founder decision (1 Nov 2026): UNIFY serves implementation partners only**: segment A first, then segment C (large SIs) through an enterprise edition. ERP vendors (B, D) are platforms, marketplaces and ecosystem partners, not buyers. See [02-product-strategy.md](02-product-strategy.md).
 
 ## 4. Competitive landscape
 

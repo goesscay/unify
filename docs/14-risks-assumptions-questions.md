@@ -25,7 +25,7 @@
 | A3 | Source data mostly arrives as Excel/CSV (or Tally/QBO exports) | Sample-file review | 0 |
 | A4 | Key configuration areas are API-accessible on ERP #1 | Technical spike | 0 |
 | A5 | Measurable financial incentive and willingness to pay at the hypothesised price | Pricing questions, LOIs, pilot conversion | 0 / 4 |
-| A6 | **Implementation partners (not only vendors) are the better first buyer** | Compare interview signals from both groups | 0 |
+| A6 | Partners will pay for a tool that ERP vendors may partly offer for free (native tooling) | Interviews: compare against Copilot/Cloud ALM/native import tools | 0 |
 | A7 | Migration + configuration is ≥ 25% of project effort for the ICP | Collect project hour breakdowns | 0 |
 | A8 | Customers will use a portal to fix their own data exceptions | Prototype tests with end customers | 0 / 2 |
 | A9 | ≥ 85% mapping accuracy is achievable on real files | Eval gold set | 0 / 2 |
@@ -34,8 +34,8 @@
 
 Answers to these will change the plan. Please respond when ready.
 
-1. **First customer type.** Should we target implementation partners/SIs first (recommended), ERP software vendors first (the blueprint), or both from day one?
-2. **First ERP.** Which ERP ecosystem does your network know best: Business Central, Odoo, SAP Business One, NetSuite, Tally/Zoho-centric Indian ERPs, or another? Do you have a specific ERP vendor or partner in mind as design partner #1?
+1. ~~**First customer type.**~~ **Answered 1 Nov 2026: implementation partners only.** ERP vendors are not customers.
+2. **First ERP.** Which ERP ecosystem does your network know best: Business Central, Odoo, SAP Business One, NetSuite, Tally/Zoho-centric Indian ERPs, or another? Do you have a specific implementation partner in mind as design partner #1?
 3. **Your background.** Are you an ERP practitioner yourself (which ERPs and modules)? This decides who authors the first knowledge packs.
 4. **Geography.** Is the first market India, GCC, UK/EU or US? This drives hosting region, localisation (GST/VAT) and pricing.
 5. **Team and funding.** Are you funding Phase 0 yourself? Do you have a technical co-founder or tech lead? Is the ₹36–58 L budget fixed, or can it move to the ₹67 L–1 Cr range for a stronger MVP?

@@ -5,10 +5,10 @@ Extends Part D of the blueprint. Changes from the blueprint: a `customer`/client
 ## 1. Hierarchy
 
 ```
-tenant (partner or vendor)
+tenant (implementation partner)
  ├── users / memberships / roles
  ├── erp_products (BC, Odoo, NetSuite…) ← global catalogue + tenant enablement
- ├── knowledge_packs / playbooks / config_templates / rule_sets / test_packs (versioned; global, vendor or tenant scope)
+ ├── knowledge_packs / playbooks / config_templates / rule_sets / test_packs (versioned; global or tenant scope)
  └── customers (end-client accounts)
       └── projects
            ├── environments (sandbox, production) → erp_connections (secret ref)
@@ -29,7 +29,7 @@ audit_events (append-only, all levels)
 Conventions: UUID v7 primary keys; `tenant_id` on **every** tenant-owned table (denormalised for RLS); `created_at`, `updated_at`, `created_by`; soft-delete via `archived_at`; JSONB only for variable metadata.
 
 ### A. Tenancy and access
-- `tenants(id, type[partner|vendor], name, region, plan_id, status, settings jsonb)`
+- `tenants(id, name, region, plan_id, status, settings jsonb)`: every tenant is an implementation partner
 - `users(id, email, name, status, idp_subject)`
 - `memberships(tenant_id, user_id, kind[internal|customer], customer_id null, status)`
 - `roles(id, tenant_id null, name, is_system)`; `role_permissions(role_id, permission)`
@@ -40,7 +40,7 @@ Conventions: UUID v7 primary keys; `tenant_id` on **every** tenant-owned table (
 - `erp_products(id, code, name, vendor, versions jsonb)`: global
 - `adapters(id, erp_product_id, version, status, capabilities jsonb)`
 - `erp_entities(adapter_id, code, name, load_order, schema jsonb)`; `erp_fields(entity_id, code, type, required, ref_entity, constraints jsonb)`
-- `knowledge_packs(id, scope[global|vendor|tenant], owner_tenant_id, erp_product_id, kind[localisation|industry|methodology], version, status)`
+- `knowledge_packs(id, scope[global|tenant], owner_tenant_id, erp_product_id, kind[localisation|industry|methodology], version, status)`
 - `knowledge_documents(pack_id, title, source_uri, checksum)`; `knowledge_chunks(document_id, tenant_id null, content, embedding vector)`
 - `playbooks(id, scope, owner_tenant_id, erp_product_id, name, version, definition jsonb, status)`
 - `config_templates(id, scope, owner_tenant_id, erp_product_id, version, items jsonb)`

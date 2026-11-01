@@ -50,7 +50,7 @@ packs/business-central/
   docs/                     # curated docs chunks for retrieval
 ```
 
-Partners layer **their own packs** on top (tenant scope). Vendors can publish packs to their partners (vendor scope).
+UNIFY builds and maintains the base pack (global scope). Partners layer **their own packs** on top (tenant scope).
 
 ## 3. First ERP: recommendation
 

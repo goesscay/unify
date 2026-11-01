@@ -1,6 +1,6 @@
 # 04 — Product Requirements Document (PRD)
 
-Version 0.1 · builds on Part A of the blueprint, re-scoped to the partner-first wedge ([02-product-strategy.md](02-product-strategy.md)).
+Version 0.1 · builds on Part A of the blueprint, re-scoped to the wedge ([02-product-strategy.md](02-product-strategy.md)). **Customers are ERP implementation partners only.** The blueprint's "ERP Vendor Admin" role and the "Vendor Dashboard" (Parts J1/J2) map to the Partner Admin role and the partner's internal Delivery Control Tower below.
 
 ## 1. Problem statement
 
@@ -29,7 +29,6 @@ ERP implementation teams repeat the same discovery, data migration, configuratio
 | **QA Lead** | Partner | Tests, defects, evidence | Testing |
 | **Customer Sponsor / Admin** | End customer | Visibility, approve, upload data | Customer Delivery Workspace (customer portal) |
 | **Customer Data Owner / Key User** | End customer | Fix data exceptions, UAT | Customer action centre, exception queue |
-| **Vendor Admin** (segment B) | ERP vendor | Publish product adapter and playbooks to partners | Vendor workspace |
 | **UNIFY Super Admin** | UNIFY | Tenants, plans, global packs, support | Admin console |
 
 ## 4. Core user journey (MVP)
@@ -53,7 +52,7 @@ Priority: **P0** = MVP, **P1** = MVP+ / GA, **P2** = later.
 ### 5.1 Platform and tenancy
 | ID | Requirement | P |
 |---|---|---|
-| PLT-1 | Self-serve and assisted tenant sign-up; tenant types: partner, vendor | P0 |
+| PLT-1 | Self-serve and assisted sign-up for implementation-partner tenants (single tenant type) | P0 |
 | PLT-2 | Org hierarchy: Tenant → Customer (client account) → Project → Environment (sandbox/prod) | P0 |
 | PLT-3 | RBAC with custom roles; permissions at tenant, customer, project, environment and action level; enforced in the backend | P0 |
 | PLT-4 | External (customer) users scoped to their own customer/projects only | P0 |
@@ -70,7 +69,7 @@ Priority: **P0** = MVP, **P1** = MVP+ / GA, **P2** = later.
 | ERP-3 | Capability registry: only allow-listed operations per adapter version | P0 |
 | ERP-4 | Adapter #1: **Dynamics 365 Business Central** (API v2.0 + config packages); **mock ERP**; **Odoo** reference adapter | P0 |
 | ERP-5 | ERP knowledge pack: entity docs, setup dependencies and load order, standard validation rules, localisations (India GST, UAE VAT, UK VAT) | P0 (BC India/UK) |
-| ERP-6 | Adapter SDK for new ERPs and for vendors | P1 |
+| ERP-6 | Internal adapter SDK so UNIFY can add new ERPs quickly | P1 |
 
 ### 5.3 Projects, playbooks and governance
 | ID | Requirement | P |

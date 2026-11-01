@@ -26,7 +26,7 @@ A **platform subscription plus an active-project allowance**, with usage-based A
 | **Starter** | Small partners, 5–20 consultants | US$990 / month (annual) | 1 ERP adapter, up to 5 active projects, 500k migrated records/yr, standard packs, email support |
 | **Growth** | 20–150 consultants | US$2,900 / month (annual) | 2 ERP adapters, up to 20 active projects, 3 M records/yr, custom packs, customer portal branding, SSO |
 | **Scale** | 150+ consultants, multi-region | US$7,500+ / month | Unlimited adapters, 60+ projects, data residency choice, audit exports, premium SLA |
-| **Enterprise / Private** | Large SIs, ERP vendors | Custom (US$100k+ ACV) | Single-tenant or VPC deployment, BYO model keys, custom adapters, vendor network features |
+| **Enterprise / Private** | Large global SIs | Custom (US$100k+ ACV) | Single-tenant or VPC deployment, BYO model keys, custom adapters, multi-practice/multi-region governance |
 | **Additional active project** | Any | US$150–400 / project-month | Overage beyond the allowance |
 | **AI and records overage** | Any | Metered | Fair-use protection for LLM cost |
 
@@ -39,8 +39,7 @@ A **platform subscription plus an active-project allowance**, with usage-based A
 | Stream | When | Notes |
 |---|---|---|
 | Per-project pricing (pay-as-you-go) | MVP / early | Easy for partners to pass through to the customer as a "migration accelerator" line item. Good for land. |
-| ERP vendor licence (vendor tenant + partner network) | Year 2 | The vendor pays to provide UNIFY to its partners. A strong distribution lever. |
-| Knowledge-pack marketplace (rev-share) | Year 3 | Partners and vendors sell industry/localisation packs (e.g., "GCC VAT for BC") |
+| Knowledge-pack marketplace (rev-share) | Year 3 | Partners sell industry/localisation packs to other partners (e.g., "GCC VAT for BC") |
 | Professional services (adapter builds, onboarding) | From day 1, capped at <20% of revenue | Fund custom adapters, but avoid becoming a services company |
 
 ## 4. Unit economics targets (steady state)

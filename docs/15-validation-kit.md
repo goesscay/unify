@@ -2,8 +2,7 @@
 
 ## 1. Interview targets
 
-- 20–30 implementation partners (practice heads, delivery heads, migration leads) across 2–3 ERP ecosystems
-- 5–10 ERP software vendors (implementation/customer success leaders)
+- 30–40 implementation partners (practice heads, delivery heads, migration leads) across 2–3 ERP ecosystems, including 3–5 practice leads inside large SIs
 - 5 end customers who recently went live (sponsor, finance or data owner)
 
 ## 2. Partner interview script (45 min)

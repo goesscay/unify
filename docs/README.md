@@ -33,6 +33,12 @@
 | 14 | [Risks, assumptions & open questions](14-risks-assumptions-questions.md) | Risk register, assumptions to validate, questions for the founder |
 | 15 | [Validation kit](15-validation-kit.md) | Interview script, design-partner LOI terms, PoC success criteria |
 
+## Decision log
+
+| Date | Decision |
+|---|---|
+| 1 Nov 2026 | **Customers are ERP implementation partners only.** The blueprint's references to ERP software vendors as buyers were a mistake. ERP vendors are platforms and ecosystems, not customers. |
+
 ## The plan in one paragraph
 
-Serve **ERP implementation partners (SIs / VARs / consultancies)** first, not only ERP software vendors — they feel the cost of every manual hour, they implement many products, and there are tens of thousands of them. Win with a narrow, measurable wedge: **an AI-assisted Data Migration & Configuration Workbench for one mid-market ERP** (recommended: Microsoft Dynamics 365 Business Central, with Odoo as a cheap reference adapter), wrapped in a governed project/approval layer and a customer portal. Prove hours saved on 2–3 real projects with 1–2 design partners, then expand to testing, readiness, discovery and a second ERP. The moat is the **implementation knowledge graph** (playbooks, mappings, validation rules, test packs) that compounds with every project, and the partner's own IP captured as reusable packs.
+UNIFY serves **ERP implementation partners only (SIs / VARs / consultancies)**. ERP software vendors are not customers; they are platforms we connect to and ecosystems we sell through. Partners feel the cost of every manual hour, they implement many products, and there are tens of thousands of them. Win with a narrow, measurable wedge: **an AI-assisted Data Migration & Configuration Workbench for one mid-market ERP** (recommended: Microsoft Dynamics 365 Business Central, with Odoo as a cheap reference adapter), wrapped in a governed project/approval layer and a customer portal. Prove hours saved on 2–3 real projects with 1–2 design partners, then expand to testing, readiness, discovery and a second ERP. The moat is the **implementation knowledge graph** (playbooks, mappings, validation rules, test packs) that compounds with every project, and the partner's own IP captured as reusable packs.

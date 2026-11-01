@@ -14,13 +14,13 @@ Start date assumed: **2 Nov 2026**. Rebaseline after Phase 0.
 | **3. Configuration + evidence** | 25–30 | May – mid-Jun 2027 | Config templates, apply + verify, evidence pack, approvals hardening | G3: E2E acceptance tests pass |
 | **4. Pilot & MVP launch** | 31–36 | mid-Jun – Jul 2027 | 2–3 real projects, baseline vs actual, pen test, pricing live | **G4: ≥ 30% saving; 2 paying customers** |
 | **5. GA + expansion** | 37–60 | Aug 2027 – Jan 2028 | Testing & readiness, discovery/fit-gap, Tally/QBO sources, adapter #2, SOC 2 Type I, UK region | G5: 10+ paying partners |
-| **6. Platform** | 2028 | | Vendor network, adapter SDK for vendors, marketplace, hypercare, enterprise private deployment | |
+| **6. Platform** | 2028 | | Enterprise edition for large SIs (private deployment), partner pack marketplace, hypercare, adapters #3+ | |
 
 ## Phase 0 — Validate & prove (8 weeks) · detailed
 
 | Week | Product / business | Technical |
 |---|---|---|
-| 1 | Finalise ICP and interview list (30 partners, 10 vendors); trademark check; register company and domain | Repo scaffold, CI, local stack (Postgres, Temporal, MinIO, Odoo docker); ADRs 001–009 |
+| 1 | Finalise ICP and interview list (30–40 implementation partners); trademark check; register company and domain | Repo scaffold, CI, local stack (Postgres, Temporal, MinIO, Odoo docker); ADRs 001–009 |
 | 2–3 | 8–10 interviews; collect anonymised sample files and setup checklists | BC sandbox spike: auth, metadata, create customers/vendors/items, configuration packages, throttling |
 | 4 | Synthesise; pick ERP #1 definitively; draft LOI | Mapping prototype: 50 real sample files → BC schema; measure accuracy across 2–3 models |
 | 5–6 | Clickable Figma prototype of migration workbench + customer portal; demo to interviewees | Thin E2E spike: CSV → mapping → validation → BC sandbox load → count reconciliation (CLI quality) |

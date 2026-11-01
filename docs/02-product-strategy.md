@@ -4,14 +4,16 @@
 
 - **Vision:** every ERP implementation runs like a factory: repeatable, evidence-based and mostly automated, with experts spending their time on judgement rather than spreadsheets.
 - **Mission:** give ERP implementation teams an AI engine that *executes* governed implementation work across any ERP, and gets smarter with every project.
-- **Positioning statement:** *For ERP implementation partners and ERP vendors' delivery teams who lose margin to repetitive migration, configuration and testing work, UNIFY is an AI implementation engine that executes that work through governed connectors with full traceability. Unlike project-tracking tools (Rocketlane, GUIDEcx) or single-ERP native tools, UNIFY does the work, across ERPs, and turns each partner's know-how into reusable automation.*
+- **Positioning statement:** *For ERP implementation partners who lose margin to repetitive migration, configuration and testing work, UNIFY is an AI implementation engine that executes that work through governed connectors with full traceability. Unlike project-tracking tools (Rocketlane, GUIDEcx) or single-ERP native tools, UNIFY does the work, across ERPs, and turns each partner's know-how into reusable automation.*
 - **Tagline (existing):** One engine. Any product. Automated implementation.
 
 ## 2. Key strategic decision: who is the customer?
 
-The blueprint names **ERP SaaS vendors** as the primary buyer. The founder's goal is **all major ERP implementation companies**. These are different businesses:
+**Decision (founder, 1 Nov 2026): UNIFY serves ERP implementation partners only.** The blueprint's reference to ERP SaaS vendors as the primary buyer was a mistake and is superseded by this document. Wherever the blueprint says "vendor" as the customer or tenant, read "implementation partner".
 
-| | ERP vendor-first (blueprint) | Implementation partner-first (recommended) |
+Why this is the right choice:
+
+| | ERP vendor as customer (rejected) | Implementation partner as customer (chosen) |
 |---|---|---|
 | Who builds the connector | The vendor helps; one adapter serves one vendor | UNIFY builds it; one adapter serves *hundreds of partners* |
 | Number of buyers per adapter | 1 | 100s–1000s |
@@ -19,7 +21,12 @@ The blueprint names **ERP SaaS vendors** as the primary buyer. The founder's goa
 | Economic pain | Indirect (time-to-value, churn) | Direct (consultant hours = margin on fixed-price deals) |
 | Risk | Vendor builds it in-house | ERP platform adds native AI tooling |
 
-**Recommendation:** **partner-first, vendor-compatible.** The same multi-tenant product serves both. Tenant type = `implementation_partner` or `software_vendor`. A vendor tenant can also publish its product adapter and playbooks to its partner network. That is the long-term flywheel: vendors bring UNIFY into their partner ecosystem.
+**Consequences for the product:**
+- One tenant type: the **implementation partner**. Under it sit the partner's end customers (client accounts) and their projects.
+- **UNIFY builds and owns all ERP adapters and base knowledge packs.** There is no vendor workspace and no vendor-published adapters.
+- The blueprint's "ERP Vendor Admin" role becomes **Partner Admin**. The "Vendor Dashboard" (Part J1/J2) becomes the partner's internal **Delivery Control Tower**.
+- ERP vendors still matter as **platforms** (their APIs and sandboxes), **marketplaces** (AppSource, Odoo Apps, SuiteApp) and **ecosystem events** where partners gather. We list there and co-market, but we don't sell to them.
+- The customer segments are: mid-market partners (beachhead) → large global SIs (enterprise edition, later).
 
 ## 3. Ideal customer profile (beachhead)
 
@@ -49,7 +56,7 @@ Why this wedge:
 
 ### Expansion path
 
-Wedge → **Test & Readiness** (requirement-linked test generation and execution, go-live readiness pack) → **Discovery & Fit-Gap** (requirements extraction, fit-gap against the ERP knowledge pack, plan generation) → **Second and third ERP adapters** → **Hypercare** → **Vendor network / marketplace**.
+Wedge → **Test & Readiness** (requirement-linked test generation and execution, go-live readiness pack) → **Discovery & Fit-Gap** (requirements extraction, fit-gap against the ERP knowledge pack, plan generation) → **Second and third ERP adapters** → **Hypercare** → **Enterprise edition for large SIs** → **Partner pack marketplace**.
 
 ## 5. Product principles
 
@@ -68,7 +75,7 @@ Wedge → **Test & Readiness** (requirement-linked test generation and execution
 | **Partner IP lock-in (positive)** | A partner's methodology lives in UNIFY as playbooks and packs. Switching means losing their automated factory. |
 | **Connector depth** | Deep, tested adapters for each ERP (including edge cases, dependencies and setup order) are expensive to rebuild. |
 | **Evidence and trust** | Audit-grade traceability that auditors and customers accept, plus certifications (SOC 2, ISO 27001). |
-| **Network (later)** | ERP vendors publish adapters and packs to their partners; partners share or sell packs in a marketplace. |
+| **Network (later)** | Partners share or sell industry and localisation packs to other partners in a marketplace; UNIFY curates. |
 
 ## 7. What UNIFY is not
 
