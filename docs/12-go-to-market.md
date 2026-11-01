@@ -2,11 +2,11 @@
 
 ## 1. Motion
 
-**Founder-led, design-partner-first enterprise sales to ERP product companies.** Each customer is a strategic account: a product to connect, an implementation team to win over, and a CTO to satisfy.
+**Product-owner-led, design-partner-first enterprise sales to ERP product companies.** Each customer is a strategic account: a product to connect, an implementation team to win over, and a CTO to satisfy.
 
 | Stage | Months | Motion | Target |
 |---|---|---|---|
-| Design partners | 0–7 | Founder network + the SME's network; free adapter and pilot → paid | 1–2 product companies |
+| Design partners | 0–7 | Product owners' networks; free adapter and pilot → paid | 1–2 product companies |
 | Early adopters | 7–12 | Case-study-led outbound to regional/vertical ERP product companies | 3–5 paying |
 | Scale ERP | 12–24 | Outbound + events + referrals; faster adapter onboarding | 15–25 paying |
 | New categories | 18+ | WMS, logistics, CRM, manufacturing product companies | First 3–5 non-ERP |
@@ -29,7 +29,7 @@
 
 ## 4. Channels
 
-- **Founder and SME network**, LinkedIn outreach to CEOs and VPs of Implementation/Customer Success
+- **Product owners' networks**, LinkedIn outreach to CEOs and VPs of Implementation/Customer Success
 - **Events**: SaaSBOOMi, NASSCOM product conclaves, regional ERP/industry trade shows; customer-success and professional-services communities
 - **Content**: "The cost of a slow ERP implementation" benchmark report; implementation playbook templates; a free migration-readiness checker
 - **Referrals**: investors and advisors in B2B SaaS; implementation leaders who move between companies

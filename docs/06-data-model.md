@@ -1,6 +1,6 @@
 # 06 — Data Model
 
-Extends Part D of the SME blueprint: **a product company is a tenant; each tenant registers one or more products and onboards many customers; each customer can have multiple implementation projects.** This document adds environment-scoped connections, versioned capability registries, playbooks and knowledge packs, record-level lineage, and the policy and evidence tables.
+Extends Part D of the UNIFY blueprint: **a product company is a tenant; each tenant registers one or more products and onboards many customers; each customer can have multiple implementation projects.** This document adds environment-scoped connections, versioned capability registries, playbooks and knowledge packs, record-level lineage, and the policy and evidence tables.
 
 ## 1. Hierarchy
 

@@ -23,7 +23,7 @@
 | **Serviceable market (ERP only)** | **~US$50–150 m ARR** |
 | Expansion: other configurable B2B products with implementation teams (WMS, TMS/logistics, CRM, manufacturing/MES, HCM/payroll, fintech, healthcare SaaS) | ×5–10 the number of companies; **US$0.5–1 bn+ ARR** opportunity |
 
-ERP is the proving ground, as the SME blueprint says: it is the hardest case (master data, finance, configuration, integrations, reconciliation). If the engine works for ERP, it works for simpler products.
+ERP is the proving ground, as the UNIFY blueprint says: it is the hardest case (master data, finance, configuration, integrations, reconciliation). If the engine works for ERP, it works for simpler products.
 
 ## 2. The problem, quantified
 

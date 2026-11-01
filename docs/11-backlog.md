@@ -1,6 +1,6 @@
 # 11 — Product Backlog
 
-Re-prioritised from Part H of the SME blueprint for the wedge. P0 = MVP (Phases 1–4), P1 = GA (Phase 5), P2 = later. Stories use *As a … I want … so that …* followed by acceptance criteria (AC).
+Re-prioritised from Part H of the UNIFY blueprint for the wedge. P0 = MVP (Phases 1–4), P1 = GA (Phase 5), P2 = later. Stories use *As a … I want … so that …* followed by acceptance criteria (AC).
 
 ## Epics (blueprint EPIC-01…12, extended)
 

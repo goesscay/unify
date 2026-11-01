@@ -2,7 +2,7 @@
 
 ## 1. Vision, mission, positioning
 
-- **Vision (from the SME blueprint):** any company offering a configurable B2B software product should be able to connect that product to UNIFY, onboard a customer and automate a substantial share of repeatable implementation work, without rebuilding the implementation engine for every product.
+- **Vision (from the UNIFY blueprint):** any company offering a configurable B2B software product should be able to connect that product to UNIFY, onboard a customer and automate a substantial share of repeatable implementation work, without rebuilding the implementation engine for every product.
 - **Mission:** give ERP product companies an AI engine that *executes* governed implementation work inside their product and gets smarter with every customer they onboard.
 - **Positioning statement:** *For ERP product companies whose growth and margins are limited by slow, manual customer implementations, UNIFY is an AI implementation engine that connects to their product and executes data migration, configuration, testing and readiness work with full traceability. Unlike onboarding project tools (Rocketlane, GUIDEcx) that only track work, or data-import widgets (Flatfile) that handle one step, UNIFY does the implementation end to end, and the product company never has to build it.*
 - **Tagline:** One engine. Any product. Automated implementation.
@@ -33,7 +33,7 @@
 
 ## 4. The wedge: what we sell first
 
-The SME blueprint's MVP covers all eight modules in six months. That is too broad for one team to make any module excellent. The recommended order:
+The UNIFY blueprint's MVP covers all eight modules in six months. That is too broad for one team to make any module excellent. The recommended order:
 
 ### Wedge: "Connect your product → automate customer data migration and setup"
 

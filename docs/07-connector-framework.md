@@ -1,6 +1,6 @@
 # 07 — Product Connector Framework
 
-> "The connector is the key to product independence." (SME blueprint, section 10)
+> "The connector is the key to product independence." (UNIFY blueprint, section 10)
 
 Every ERP product company's product connects to UNIFY through an **adapter** that implements one standard contract and exposes only documented, allow-listed capabilities. AI must never invent API endpoints, database fields or configuration options.
 

@@ -2,7 +2,7 @@
 
 **UNIFY — Universal AI Implementation Engine.** A multi-tenant SaaS platform that **ERP product companies** connect their product to. They then use it to onboard and implement each new customer: discovery, data migration, configuration, testing and go-live readiness, automated where repeatable, under human approval and with full audit.
 
-> Status: planning baseline v0.3 · 1 Nov 2026 · prepared from the four source documents in the repository root (from an ERP subject-matter expert) plus market research. Every number, price and date is a hypothesis until the validation phase confirms it.
+> Status: planning baseline v0.3 · 1 Nov 2026 · prepared by the UNIFY product owners from the four source documents in the repository root plus market research. Every number, price and date is a hypothesis until the validation phase confirms it.
 
 ## Who UNIFY serves
 
@@ -20,7 +20,7 @@
 | `UNIFY Internal Delivery Dashboard.html` | Mock-up: the product company's internal "Delivery Control Tower" |
 | `UNIFY Customer Delivery Dashboard.html` | Mock-up: the end-customer delivery workspace |
 
-The SME blueprint is the foundation. These planning documents keep its direction and add market research, sharper scope, commercial model and execution detail.
+The UNIFY blueprint is the foundation. These planning documents keep its direction and add market research, sharper scope, commercial model and execution detail.
 
 ## Planning document set
 
@@ -46,7 +46,7 @@ The SME blueprint is the foundation. These planning documents keep its direction
 
 | Date | Decision |
 |---|---|
-| 1 Nov 2026 | **Customers are ERP product companies** that implement their own product for their customers (the SME blueprint's direction). Other configurable B2B product companies follow after the ERP pilot. |
+| 1 Nov 2026 | **Customers are ERP product companies** that implement their own product for their customers (the UNIFY blueprint's direction). Other configurable B2B product companies follow after the ERP pilot. |
 
 ## The plan in one paragraph
 

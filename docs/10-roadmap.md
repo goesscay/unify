@@ -1,6 +1,6 @@
 # 10 — Roadmap & Release Plan
 
-The SME blueprint asked stakeholders to approve **a time-boxed discovery and technical proof of concept, not an unconditional commitment to the full build**. This roadmap keeps that gate, keeps the blueprint's delivery gates, and sequences the build around the wedge.
+The UNIFY blueprint asked stakeholders to approve **a time-boxed discovery and technical proof of concept, not an unconditional commitment to the full build**. This roadmap keeps that gate, keeps the blueprint's delivery gates, and sequences the build around the wedge.
 
 Start date assumed: **2 Nov 2026**. Rebaseline after Phase 0.
 
@@ -37,7 +37,7 @@ Start date assumed: **2 Nov 2026**. Rebaseline after Phase 0.
 ## Delivery cadence
 
 - Two-week sprints; sprint demos to the design partner from Phase 2
-- Monthly steering (founder, tech lead, the design partner's implementation head)
+- Monthly steering (product owners, tech lead, the design partner's implementation head)
 - Staging weekly, production bi-weekly; feature flags per tenant
 
 ## Blueprint acceptance tests by phase

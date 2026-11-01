@@ -1,6 +1,6 @@
 # 04 — Product Requirements Document (PRD)
 
-Version 0.3 · builds on Part A of the SME blueprint, re-sequenced around the wedge in [02-product-strategy.md](02-product-strategy.md). **Customers are ERP product companies** that implement their own product for their customers.
+Version 0.3 · builds on Part A of the UNIFY blueprint, re-sequenced around the wedge in [02-product-strategy.md](02-product-strategy.md). **Customers are ERP product companies** that implement their own product for their customers.
 
 ## 1. Problem statement
 
