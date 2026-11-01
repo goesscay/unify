@@ -14,7 +14,7 @@ Builds on Part C of the blueprint. The core choices stand (modular monolith, Fas
 
 ```
 ┌───────────────────────────── EXPERIENCE ──────────────────────────────┐
-│ Partner app (Next.js) · Customer portal (white-label) · Admin console │
+│ Product-company app · Customer portal (white-label) · Admin console   │
 │ Public REST API + webhooks · Excel add-in (later)                     │
 └───────────────────────────────┬───────────────────────────────────────┘
                                 │ HTTPS (OIDC tokens)
@@ -35,8 +35,8 @@ Builds on Part C of the blueprint. The core choices stand (modular monolith, Fas
                                            │
                 ┌──────────────────────────┼───────────────────────────┐
                 │ AI GATEWAY               │ CONNECTOR RUNTIME          │
-                │ model routing, PII       │ adapters: Mock · BC ·      │
-                │ redaction, prompt        │ Odoo · NetSuite · SAP B1 … │
+                │ model routing, PII       │ adapters: Mock · Odoo ref ·│
+                │ redaction, prompt        │ one per tenant product …   │
                 │ registry, cost metering, │ capability registry,       │
                 │ eval hooks, caching      │ rate limiting, idempotency │
                 └──────────────────────────┴──────────────┬────────────┘
@@ -72,14 +72,14 @@ Builds on Part C of the blueprint. The core choices stand (modular monolith, Fas
 
 ```
 unify/
-  apps/web/                 # Next.js partner app + customer portal
+  apps/web/                 # Next.js product-company app + customer portal
   services/api/             # FastAPI modular monolith
     modules/
       identity/ tenancy/ projects/ playbooks/ approvals/ audit/
       files/ migration/ configuration/ testing/ readiness/
       knowledge/ billing/ notifications/
   services/workers/         # Temporal workers: data, agent, connector
-  packages/connectors/      # adapter SDK + adapters (mock, bc, odoo, ...)
+  packages/connectors/      # adapter SDK, conformance suite + adapters (mock, odoo, <tenant products>)
   packages/agents/          # agent definitions, tools, prompts (versioned)
   packages/rules/           # deterministic validation/transform library
   packs/                    # ERP knowledge packs + sample playbooks (YAML)
@@ -98,7 +98,8 @@ unify/
 ### 5.3 Multi-tenancy model
 - **Pooled** multi-tenant by default: shared DB with `tenant_id` + RLS (`SET app.tenant_id` per transaction from the token).
 - **Siloed** option for Enterprise: a dedicated DB/schema and dedicated workers in the customer's chosen region, or a VPC deployment.
-- Customer (end-client) data stays inside the partner tenant, scoped by `customer_id`/`project_id`.
+- Tenant = ERP product company. Its customers' data stays inside that tenant, scoped by `customer_id`/`project_id`.
+- Adapters for a tenant's product run only for that tenant; adapter code and credentials are never shared across tenants.
 
 ## 6. Environments
 

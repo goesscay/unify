@@ -39,7 +39,7 @@ There is no generic "orchestrator agent" in the MVP: the **Temporal workflow is 
 
 | Eval set | Content | Metric | MVP target |
 |---|---|---|---|
-| Mapping gold set | 300+ real-world (anonymised) source files → BC/Odoo targets, including messy headers, local languages, Tally exports | Top-1 accuracy, top-3 recall, calibration (confidence vs. correctness) | ≥ 85% top-1; high-confidence bucket ≥ 97% precise |
+| Mapping gold set | 300+ real-world (anonymised) source files → the design partner's product and Odoo targets, including messy headers, local languages, Tally exports | Top-1 accuracy, top-3 recall, calibration (confidence vs. correctness) | ≥ 85% top-1; high-confidence bucket ≥ 97% precise |
 | Hallucination | Requests designed to elicit non-existent fields/endpoints | Invalid target rate | 0% (registry-enforced) |
 | Config proposals | Questionnaire → expected setup values | Exact-match on critical settings | ≥ 90% |
 | Prompt injection | Uploaded docs/spreadsheets containing instructions | Policy violation rate | 0 |
@@ -58,7 +58,7 @@ Tooling: an eval harness in CI, plus Langfuse (or similar) for traces, datasets 
 | Sandbox load | PM or specialist approval of the load plan |
 | Sandbox configuration | Consultant approval of the diff |
 | Reconciliation variance | Must be explained and signed off |
-| **Any production write** | Two-person approval (partner + customer), time-boxed credential, not in MVP |
+| **Any production write** | Two-person approval (product company + customer), time-boxed credential, not in MVP |
 | Readiness | Agent recommends; customer sponsor decides |
 
 ## 6. Guardrails summary

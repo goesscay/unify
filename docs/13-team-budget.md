@@ -8,12 +8,12 @@
 | Tech lead (backend/platform, Python, Temporal) | 1 (hire first) | 1 | 1 |
 | AI/data engineer (mapping, evals, rules engine) | 0.5 (contract) | 1 | 2 |
 | Full-stack engineer (Next.js, grids, portals) | — | 1 | 2 |
-| Integration engineer (BC/Odoo adapters) | 0.5 (contract) | 1 | 2 |
+| Integration engineer (adapters: Odoo reference + design partner's product) | 0.5 (contract) | 1 | 2 |
 | QA / automation | — | 1 (from month 5) | 1 |
-| ERP functional consultant (BC/Odoo; packs, rules, tests) | Advisor | 1 (part-time → full) | 1–2 |
+| ERP functional consultant (implementation methodology; packs, rules, tests; works with design partner's team) | Advisor | 1 (part-time → full) | 1–2 |
 | UX designer | Part-time | Part-time | 1 |
 | DevOps/SRE + security | Tech lead | Part-time contractor | 1 |
-| Sales / partnerships | Founder | Founder | 1 AE + 1 partner manager |
+| Sales | Founder | Founder | 1 enterprise AE + 1 solutions engineer |
 | **Headcount (FTE)** | **~3** | **~7–8** | **~13–15** |
 
 **A key addition to the blueprint:** a **hands-on ERP functional consultant**. The knowledge packs, validation rules and test packs are the moat, and engineers cannot author them alone.
@@ -25,7 +25,7 @@
 | People | ₹8–12 L | ₹40–55 L | Blended; founder salary excluded |
 | Cloud (AWS), Temporal Cloud, tooling | ₹0.5–1 L | ₹4–7 L | Credits: AWS Activate, Microsoft for Startups, model-provider credits |
 | AI model usage | ₹0.3 L | ₹2–4 L | Evals + pilots |
-| ERP sandboxes / partner programme fees | ₹0.5 L | ₹1–3 L | BC via Microsoft partner programme; Odoo free |
+| Sandboxes / test environments | ₹0.3 L | ₹1–2 L | Odoo self-hosted (free); design partner provides its product sandbox |
 | Security (pen test, VAPT), compliance tooling | — | ₹4–7 L | SOC 2 tooling begins ~month 8 |
 | Legal, company, trademark, contracts | ₹1–2 L | ₹2–3 L | |
 | Design, website, travel/events | ₹0.5–1 L | ₹3–5 L | |

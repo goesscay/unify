@@ -1,44 +1,48 @@
 # 01 — Market Research & Competitive Analysis
 
-> Research snapshot: October 2026. Market-size figures come from analyst press releases and secondary sources; treat them as directional. Sources are listed at the end.
+> Research snapshot: October–November 2026. Market-size figures come from analyst press releases and secondary sources; treat them as directional. Sources are listed at the end.
 
 ## 1. Market size
 
 | Market | Estimate | Source / note |
 |---|---|---|
-| ERP software (global) | ~US$117–120 bn by 2030, ~10–12% CAGR | Allied Market Research; other analyst estimates vary |
+| ERP software (global) | ~US$117–120 bn by 2030, ~10–12% CAGR | Allied Market Research; other estimates vary |
 | ERP implementation services | ~US$29.5 bn (2025) → ~US$44 bn (2031), ~7.3% CAGR | Mordor Intelligence |
 | ERP system integration & consulting | +US$14.7 bn growth 2024–2029, ~10.6% CAGR | Technavio |
 | Services share of ERP | Services segment expected to grow fastest (~10.7% CAGR) | Allied Market Research |
 
-**What this means for UNIFY.** For every dollar of ERP licence, customers typically spend one to three dollars on implementation services. That service spend is labour, and labour is what UNIFY automates. Even a small share of the services pool is a large software market. For example, if tooling captures 3–5% of a ~US$30 bn services market, that is a US$0.9–1.5 bn tooling opportunity.
+**What this means for UNIFY.** Every ERP sale is followed by an implementation, and much of that work is done by the product company's own implementation team. Implementation cost and duration decide how fast the product company recognises revenue, how many customers its team can onboard, and whether customers churn in year 1. UNIFY sells to the product company to make that engine faster and cheaper.
 
 ### Bottom-up sizing (hypothesis, to validate)
 
 | Input | Assumption |
 |---|---|
-| Mid-market ERP implementation partners worldwide (SAP B1/S4 Public, Dynamics 365 BC/F&O, NetSuite, Odoo, Sage, Acumatica, Infor, Epicor, Zoho/Tally ecosystems) | ~20,000–30,000 firms (SAP alone claims 25,000+ partners; Microsoft's ecosystem is larger) |
-| Firms with 10–500 consultants (realistic SaaS buyers) | ~6,000–10,000 |
-| Average projects per firm per year | 10–60 |
-| Target ACV | US$15k–60k |
-| **Serviceable market (SAM)** | **~US$150–400 m ARR** for the mid-market partner segment alone, before large SIs |
+| ERP product companies worldwide (cloud/SaaS and hybrid; horizontal, vertical and regional) | ~2,000–4,000 (software directories list 1,000+ ERP products; many more vertical and regional ERPs) |
+| Of which mid-size with in-house implementation teams and APIs (the ICP) | ~600–1,200 |
+| Target ACV | US$40k–150k |
+| **Serviceable market (ERP only)** | **~US$50–150 m ARR** |
+| Expansion: other configurable B2B products with implementation teams (WMS, TMS/logistics, CRM, manufacturing/MES, HCM/payroll, fintech, healthcare SaaS) | ×5–10 the number of companies; **US$0.5–1 bn+ ARR** opportunity |
+
+ERP is the proving ground, as the SME blueprint says: it is the hardest case (master data, finance, configuration, integrations, reconciliation). If the engine works for ERP, it works for simpler products.
 
 ## 2. The problem, quantified
 
-- **Overruns are the norm.** Panorama Consulting surveys report that most ERP projects take longer than planned (~61%) and roughly half go over budget (~53%). Average projects ran ~US$7 m over ~18 months in the surveyed population (skewed to larger firms).
-- **Data migration is the most underestimated workstream.** Estimates range from 10–15% of cost to much higher shares of the problems found. Every implementation repeats it, and it is still done in Excel, with VLOOKUPs and with consultants on the phone with customers.
-- **Repeatability is high, but reuse is low.** Partners implement the same ERP dozens of times a year with the same master entities, the same setup sequence and the same test scripts. Yet each project restarts from spreadsheets. Knowledge leaves with the consultant.
-- **Partner margins are pressured.** Customers want fixed-price, faster implementations. SAP, Microsoft and Oracle push "fast-track" methods. Partners that cannot industrialise delivery lose margin.
+- **Implementations are slow and over budget.** Panorama Consulting surveys report most ERP projects take longer than planned (~61%) and roughly half go over budget (~53%).
+- **The product company pays for it.** Implementation is often priced at or below cost to win the deal. Every extra week delays subscription revenue, ties up scarce consultants, and raises churn risk.
+- **Data migration is the most underestimated workstream.** Every customer arrives with Excel files, legacy exports (Tally, QuickBooks, old ERPs) and dirty data. It is redone manually for every customer.
+- **Repeatability is high, but reuse is low.** The same product, the same entities, the same setup sequence and the same test scripts appear in every implementation. Yet each one restarts from spreadsheets, and knowledge leaves with the consultant.
+- **Implementation capacity caps growth.** Sales can close more customers than the implementation team can onboard. Hiring ERP consultants is slow and expensive.
 
-## 3. Buyer segments
+## 3. Customer segments
 
-| Segment | Examples | Pain | Willingness to buy tooling | Fit for UNIFY |
+| Segment | Examples | Pain | Fit for UNIFY | When |
 |---|---|---|---|---|
-| **A. Mid-market ERP implementation partners / VARs** (10–500 consultants) | Dynamics 365 BC partners, NetSuite Solution Providers, SAP B1 partners, Odoo partners | Margin on fixed-price projects; consultant scarcity; repeat work | High: they buy tools to protect margin, and decisions are fast (founder/practice head) | **Best beachhead** |
-| B. Large global SIs | Accenture, Deloitte, Infosys, TCS, Wipro, Capgemini | Scale, consistency | Build their own tooling, long procurement, demand on-prem | Later: enterprise edition |
-| C. End customers doing self-implementation | SMBs implementing Odoo/BC themselves | No expertise | Low budget | Not a target; served indirectly through their partner |
+| **A. Mid-size ERP product companies** (50–1,000 employees, in-house implementation team) | Regional and vertical ERPs (e.g., Indian cloud ERPs, GCC ERPs, industry ERPs for distribution, manufacturing, construction, retail) | Time-to-go-live, implementation margin, consultant capacity, early churn | **Beachhead.** Repeatable implementations, APIs available, fast decisions | Phase 0–GA |
+| B. Large ERP product companies | Global mid-market/enterprise ERP publishers | Scale, partner quality | Long cycles; build their own tools | Later, enterprise edition |
+| C. Other configurable B2B product companies | WMS, logistics SaaS, CRM, manufacturing/MES, HCM/payroll, fintech | Same implementation pain | Same engine, new adapters and packs | After ERP pilot |
+| D. Small ERP startups (<50 employees) | Early-stage ERPs | Real pain, small budget | Self-serve "Starter" later | Later |
 
-**Conclusion:** UNIFY serves implementation partners: segment A first, then segment B (large SIs) through an enterprise edition. See [02-product-strategy.md](02-product-strategy.md).
+**Beachhead ICP detail:** see [02-product-strategy.md](02-product-strategy.md#3-ideal-customer-profile-beachhead).
 
 ## 4. Competitive landscape
 
@@ -46,45 +50,42 @@
 
 | Player | What they do | Strength | Gap UNIFY can exploit |
 |---|---|---|---|
-| **superglue** (YC, ~US$0.5 m pre-seed, 2024) | "AI implementation platform for ERP partners/VARs"; agentic migration and config; Sage Intacct Marketplace connector (Aug 2026); claims a Sage VAR cut migration hours by 80% | Same thesis, already shipping; self-hosted option | Early; Sage-centric; migration-only; no project governance, customer portal or testing/readiness. **The closest threat. Watch closely.** |
-| **Tato** (raised ~US$5 m) | "Fixing ERP implementations with an AI-based platform" | Funded, ERP-specific | Needs a deeper look; likely project and requirements focused |
-| **Rocketlane** (Nitro AI) | Implementation/onboarding PSA platform with agentic AI | Strong project management, customer portal and PSA | Generic across SaaS; **does not execute** ERP migration or config |
-| **GUIDEcx**, Arrows, OnRamp, Valuecase | Customer onboarding project portals | Customer-facing UX | Tracking only, no execution |
-| NextDay Migration, Nominal | AI-assisted migrations to NetSuite/ERP | Fast migration claims | Single-ERP, migration-only, service-heavy |
+| **Rocketlane** (Nitro AI) | Implementation/onboarding PSA platform for SaaS product companies' implementation teams; agentic AI features | Strong project management, customer portal, PSA; many SaaS customers; published time-to-value case studies | **Tracks** the implementation; does **not execute** data migration, configuration or tests inside the customer's product |
+| **GUIDEcx** | Customer onboarding project portal for SaaS companies | Customer-facing UX; onboarding teams of 5–30 | Tracking only; no execution |
+| OnRamp, Arrows, Valuecase, Tandem | Customer onboarding portals | Lightweight, cheaper | Tracking/collaboration only |
+| **superglue** (YC, ~US$0.5 m pre-seed) | AI implementation automation (migration and config), currently sold through ERP marketplaces | Same execution thesis, shipping | Early; narrow product coverage; no governed project workspace or readiness |
+| Tato (~US$5 m raised) | "Fixing ERP implementations with AI" | Funded, ERP-specific | To be analysed in Phase 0 |
+| Flatfile, OneSchema, Dromo, Osmos | Embeddable customer data import/onboarding (CSV mapping, validation) for SaaS products | Very good data-import UX; product companies already embed them | Import step only: no implementation workflow, configuration, testing, reconciliation or readiness |
+| **In-house tools** | Product company's own import templates, scripts, setup wizards | Fit their product exactly | Expensive to maintain; no AI; no governance; not reusable |
 
-### 4.2 Adjacent categories (pieces of the job)
+**Key insight:** UNIFY sits between the **onboarding project tools** (Rocketlane, GUIDEcx), which track but don't execute, and the **data-import widgets** (Flatfile, OneSchema), which do one step. UNIFY is the governed engine that **does the implementation work end to end** inside the product.
 
-| Category | Players | Relationship to UNIFY |
+### 4.2 Adjacent categories
+
+| Category | Players | Relationship |
 |---|---|---|
-| Enterprise data migration | Syniti, SAP Data Services/Migration Cockpit, Informatica, Talend, Cloudsufi, DataLark | Enterprise-grade, expensive, SAP-heavy; overkill for mid-market. UNIFY is lighter, AI-first and cross-ERP |
-| iPaaS / integration | Celigo, Boomi, Workato, MuleSoft, Make | UNIFY should *integrate with* these, not replace them |
-| ERP test automation | Tricentis, Panaya, Worksoft, Leapwork | UNIFY generates requirement-linked tests; it can export to them later |
-| Process mining / fit-gap | SAP Signavio, Celonis | Enterprise discovery; UNIFY's discovery is lightweight and document-based |
-| ERP-native tooling | SAP Cloud ALM + Joule for Consultants, BC RapidStart/Configuration Packages, NetSuite SuiteSuccess/CSV import, Odoo import | Free with the ERP, single-ERP, not AI-orchestrated. UNIFY must *use* these as execution channels |
-| General AI | ChatGPT/Claude/Copilot used ad hoc by consultants | The "do nothing" competitor: consultants paste spreadsheets into chatbots. UNIFY wins on governance, traceability, execution and reuse |
+| Enterprise data migration | Syniti, Informatica, Talend | Too heavy for mid-size product companies |
+| iPaaS / integration | Celigo, Boomi, Workato, MuleSoft | Integrate with, don't replace |
+| Test automation | Tricentis, Leapwork, Worksoft | Export to later |
+| General AI | Consultants using ChatGPT/Claude ad hoc | The "do nothing" option; UNIFY wins on governance, execution, traceability and reuse |
 
-### 4.3 The platform threat: SAP, Oracle and Microsoft moving in
+### 4.3 Platform signal
 
-- **SAP (Sapphire 2026)** launched AI migration and modernization assistants built on **SAP Cloud ALM**, requiring Joule for Consultants/Developers. Secondary sources cite ~35% migration effort reduction (unverified). SAP and Palantir partnered on AI-supported data migration, with Accenture as the lead services partner.
-- **Oracle** is embedding agents in Fusion and NetSuite (mostly for operations, less for implementation).
-- **Microsoft** is pushing Copilot into Dynamics 365, including some setup and data assistance.
-
-**Implication:** do not start with SAP S/4HANA. SAP will own AI tooling for its large-enterprise migrations. Mid-market ERPs (Business Central, NetSuite, Odoo, Acumatica, Sage, SAP B1) have weaker native implementation tooling and many more partners. **Cross-ERP neutrality** is something no single-ERP tool can offer, and partners who implement two or three ERPs value it.
+SAP launched AI migration assistants on Cloud ALM (Sapphire 2026), and Oracle and Microsoft are embedding agents in their ERPs. This **validates the thesis**: the largest ERP publishers are investing in AI-automated implementation for themselves. Mid-size ERP product companies cannot afford to build this. **UNIFY gives every mid-size ERP product company the implementation automation that only SAP-scale companies can build in-house.** That is the core pitch.
 
 ## 5. White space: where UNIFY wins
 
-1. **Execution, not tracking.** Rocketlane and GUIDEcx track tasks; UNIFY performs the migration, configuration and tests through governed connectors.
-2. **Governed AI.** Approval gates, record-level traceability, reconciliation and audit, which is what partners need to put AI near customer financial data.
-3. **Cross-ERP, partner-owned knowledge.** A partner's playbooks, mapping templates, validation rules and test packs become reusable, versioned IP inside UNIFY, across every ERP they implement.
-4. **The mid-market, which native ERP tooling and big data-migration tools underserve.**
-5. **India + emerging markets.** Large partner ecosystems (SAP B1, Dynamics, Odoo, Tally/Zoho), price-sensitive, GST/e-invoicing complexity. This is a natural home market for a lean, India-built team, with global pricing.
+1. **Execution, not tracking**: migration, configuration and tests run inside the customer's instance of the product through governed adapters.
+2. **"Connect your product once"**: an adapter SDK and capability registry, so the product company gets automation without building it.
+3. **Governed AI**: approval gates, record-level traceability, reconciliation and audit; safe to use on customers' financial data.
+4. **Compounding knowledge**: every implementation improves that product's mappings, rules and playbooks.
+5. **Mid-size and regional ERP product companies** (India, GCC, SEA, Europe), which are underserved by enterprise tools and can't build their own.
 
-## 6. Key market takeaways for planning
+## 6. Key takeaways for planning
 
-- The thesis is validated by others moving (superglue, Tato, SAP's assistants). The window is open but narrowing over roughly 12–24 months.
-- Speed to a **working, real-ERP migration demo** matters more than breadth.
-- Pick a **mid-market ERP with good APIs and a large partner channel** for adapter #1.
-- Position as **"the implementation factory for ERP partners"**, not as "AI project management."
+- The thesis is validated (SAP's assistants, superglue, Tato, the Rocketlane AI push). The window is open but narrowing.
+- **The design-partner product company is everything**: its product, APIs and implementation team define the first adapter and prove the value.
+- Position as **"the AI implementation engine for your product"**, not as onboarding project management.
 
 ## Sources
 
@@ -93,17 +94,13 @@
 - [Allied Market Research via PR Newswire — ERP market to US$117 bn by 2030](https://prnewswire.co.uk/news-releases/enterprise-resource-planning-erp-market-to-reach-117-09-billion-globally-by-2030-at-10-0-cagr-allied-market-research-302255102.html)
 - [Computerworld — Panorama ERP survey](https://www.computerworld.com/?p=1409911)
 - [CIO — ERP project woes survey](https://www2.cio.com.au/article/454319/erp_software_project_woes_continue_mount_survey_says/)
-- [erp-software.org — ERP migration](https://erp-software.org/en/glossary/erp-migration/)
+- [Rocketlane — GUIDEcx competitors](https://rocketlane.com/blogs/guidecx-competitors)
+- [Rocketlane — SupportLogic case study](https://rocketlane.com/customers/how-supportlogic-accelerated-their-time-to-value-by-60-by-moving-from-guidecx-to-rocketlane)
+- [Rocketlane — AI data migration](https://www.rocketlane.com/blogs/ai-data-migration)
+- [Tandem — GUIDEcx vs Rocketlane](https://usetandem.ai/blog/guidecx-vs-rocketlane)
 - [superglue on the Sage Intacct Marketplace — CPA Practice Advisor](https://www.cpapracticeadvisor.com/?p=189139)
 - [superglue — PitchBook profile](https://pitchbook.com/profiles/company/761476-69)
-- [superglue — AI data migration tools comparison](https://superglue.ai/compare/ai-data-migration-tools/)
 - [Tato raises US$5 m — Pulse 2.0](https://pulse2.com/tato-5-million-raised-for-fixing-erp-implementations-with-ai-based-platform/?noamp=mobile)
-- [Rocketlane — AI data migration](https://www.rocketlane.com/blogs/ai-data-migration)
-- [Rocketlane — GUIDEcx competitors](https://rocketlane.com/blogs/guidecx-competitors)
-- [Tandem — GUIDEcx vs Rocketlane](https://usetandem.ai/blog/guidecx-vs-rocketlane)
 - [SAP — Migration and Modernization Assistants FAQ](https://www.sap.com/documents/2026/06/3eabc539-5b7f-0010-bca6-c68f7e60039b.html)
 - [SAPinsider — Sapphire 2026: AI agents, workflows, cloud migration](https://sapinsider.org/articles/sap-sapphire-2026-ai-agents-industry-workflows-cloud-migration/)
-- [SAPinsider — SAP partner ecosystem with Anthropic, NVIDIA, Palantir](https://sapinsider.org/blogs/sap-expands-partner-ecosystem-for-autonomous-enterprise-with-anthropic-nvidia-and-palantir/)
-- [SAP Learning — SAP Partner Network](https://learning.sap.com/courses/introducing-sap-s-core-business-processes-sap-for-industries-and-the-sap-partner-network/introducing-the-sap-partner-network-1)
 - [Energent — AI-powered ERP migration tools 2026](https://www.energent.ai/energent/compare/en/ai-powered-erp-migration)
-- [Ispirer — AI data migration in 2026](https://www.ispirer.com/blog/ai-data-migration)

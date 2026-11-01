@@ -1,12 +1,12 @@
 # 09 — Security, Compliance & Trust
 
-UNIFY holds end-customers' master and financial data and credentials to their ERPs. For a partner, trust is a buying criterion, not a feature. This document extends Part G of the blueprint.
+UNIFY holds the product company's customers' master and financial data, and credentials to their instances of the product. For a product company, trust is a buying criterion: its CTO will approve API access only if UNIFY's controls are strong. This document extends Part G of the blueprint.
 
 ## 1. Threat model (top risks)
 
 | Threat | Control |
 |---|---|
-| Cross-tenant data leak (partner A sees partner B; customer X sees customer Y) | RLS on every table; scoped object-storage prefixes; tenant-scoped vector search; automated isolation tests in CI; pen tests |
+| Cross-tenant data leak (product company A sees product company B; customer X sees customer Y) | RLS on every table; scoped object-storage prefixes; tenant-scoped vector search; automated isolation tests in CI; pen tests |
 | ERP credential theft → fraudulent writes | Vault storage; credentials never returned to the UI; least-privilege app registrations; per-environment credentials; short-lived tokens; egress allow-lists |
 | Malicious upload (macro, zip bomb, parser exploit) | Type allow-list, size limits, ClamAV, sandboxed parsing workers, no macro execution |
 | Prompt injection via uploaded docs/data | Untrusted-content handling, no write tools for agents, schema-validated outputs, policy engine |
@@ -31,10 +31,10 @@ UNIFY holds end-customers' master and financial data and credentials to their ER
 | Item | Why | When |
 |---|---|---|
 | **DPDP Act 2023 (India)** readiness: consent and notice, data processing agreement, breach process | India-hosted customer data | MVP |
-| **GDPR / UK GDPR**: DPA, SCCs, subprocessors list, DPIA | UK/EU partners and their customers | Before the first EU/UK customer |
-| **SOC 2 Type I → Type II** | Main ask from US/UK partners and their enterprise customers | Type I by ~month 9–10; Type II ~month 15–18 (use Vanta/Drata/Sprinto) |
+| **GDPR / UK GDPR**: DPA, SCCs, subprocessors list, DPIA | UK/EU product companies and their customers | Before the first EU/UK customer |
+| **SOC 2 Type I → Type II** | Main ask from product companies' CTOs and security teams | Type I by ~month 9–10; Type II ~month 15–18 (use Vanta/Drata/Sprinto) |
 | **ISO 27001** | Asks from India/Middle East enterprise and SIs | Year 2 |
-| Microsoft AppSource / partner listing security review | Distribution in the BC ecosystem | With the BC GA adapter |
+| Security questionnaire pack (CAIQ/SIG Lite) and API-access security addendum | Every product company's CTO review before granting API access | Before the first design partner connects production |
 | VAPT by a CERT-In empanelled auditor | Indian enterprise customers often require it | Before GA |
 
 ## 4. Trust features that sell

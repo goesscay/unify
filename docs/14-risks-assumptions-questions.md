@@ -1,46 +1,47 @@
 # 14 — Risks, Assumptions & Open Questions
 
-## 1. Risk register
+## 1. Risk register (blueprint section 26, extended)
 
 | # | Risk | L | I | Mitigation | Owner |
 |---|---|---|---|---|---|
-| R1 | ERP platforms ship native AI implementation tooling (SAP already has) | H | H | Mid-market ERPs first; cross-ERP value; list on ERP marketplaces | Founder |
-| R2 | Fast-moving startup competitor (superglue, Tato) captures the partner segment | M | H | Narrow + deep wedge; governance + customer portal; speed to design partners | Founder |
-| R3 | ERP API gaps for setup/config | M | H | Phase 0 spike; use bulk/config-package import; scope config to API-supported areas | Tech lead |
-| R4 | AI mapping quality insufficient on messy real data | M | H | Deterministic rules first; mapping memory; eval gold set; confidence thresholds; human review | AI lead |
-| R5 | Partners resist automation that reduces billable hours | M | M | Sell margin on fixed price + capacity; per-project pricing they can pass through | Founder |
-| R6 | Data security incident | L | Very H | Controls in [09](09-security-compliance.md); pen tests; least privilege; sandbox-first | Tech lead |
-| R7 | Scope creep toward "universal" before proof | H | H | Gate-based roadmap; one ERP; P0 discipline | Founder |
-| R8 | Services trap (custom adapters for each client) | M | M | Cap services at <20% of revenue; SDK; packs over custom code | Founder |
-| R9 | LLM cost erodes margin | L | M | Profiles not datasets; small models; caching; budgets | AI lead |
-| R10 | Trademark conflict on "Unify" | M | M | Early search; fallback name | Founder |
-| R11 | Hiring a strong tech lead takes too long | M | H | Start recruiting in week 1; consider a technical co-founder with equity | Founder |
+| R1 | Limited product API access (setup/config not exposed) | M | H | Phase 0 API spike; API readiness checklist; bulk-import fallback; co-develop missing APIs with the design partner | Tech lead |
+| R2 | Each new product needs a custom adapter, so UNIFY becomes a services company | H | H | Strict contract; reuse patterns; SDK; charge adapter onboarding; target ≤ 4 weeks per product by GA | Founder / tech lead |
+| R3 | The product company decides to build in-house | M | H | Speed and depth; show the cost of building migration + governance + portal + AI evals; land before they start | Founder |
+| R4 | Long enterprise sales cycles / CTO security approval | M | H | Security pack early; sandbox-first; read-only start; SOC 2 roadmap | Founder |
+| R5 | Inconsistent customer data → AI misreads business meaning | M | H | Deterministic rules, exception queue, traceability, specialist approval (blueprint) | AI lead |
+| R6 | Unsafe agent execution writes wrong data | L | Very H | Allow-listed tools, least privilege, sandbox-first, approvals, read-back, audit | Tech lead |
+| R7 | Tenant data leakage | L | Very H | RLS, isolation tests, pen tests, vault | Tech lead |
+| R8 | Scope expansion before proof | H | H | One design partner, limited entities, gate-based roadmap | Founder |
+| R9 | Unproven willingness to pay | M | H | Baseline + pilot commitments + paid conversion terms in the LOI | Founder |
+| R10 | Onboarding tools (Rocketlane, GUIDEcx) add execution features | M | M | Go deep on finance-grade migration, configuration and reconciliation | Founder |
+| R11 | Dependence on a single design partner | M | M | Recruit 2; keep the Odoo reference adapter as a demo product | Founder |
+| R12 | Trademark conflict on "Unify" | M | M | Early search; fallback name | Founder |
+| R13 | Hiring a strong tech lead takes too long | M | H | Start week 1; consider a technical co-founder | Founder |
 
-## 2. Assumptions to validate (blueprint's five + new)
+## 2. Assumptions to validate
 
-| # | Assumption | Validation method | Phase |
+The blueprint's five assumptions (section 27), plus three more:
+
+| # | Assumption | How to validate | Phase |
 |---|---|---|---|
-| A1 | Design partners will provide ERP sandbox access and anonymised data | LOIs | 0 |
-| A2 | Partners have repeatable workflows they will standardise into playbooks | Interviews; collect their templates | 0 |
-| A3 | Source data mostly arrives as Excel/CSV (or Tally/QBO exports) | Sample-file review | 0 |
-| A4 | Key configuration areas are API-accessible on ERP #1 | Technical spike | 0 |
-| A5 | Measurable financial incentive and willingness to pay at the hypothesised price | Pricing questions, LOIs, pilot conversion | 0 / 4 |
-| A6 | Partners will pay for a tool when ERPs include some free native tooling | Interviews: compare against Copilot/Cloud ALM/native import tools | 0 |
-| A7 | Migration + configuration is ≥ 25% of project effort for the ICP | Collect project hour breakdowns | 0 |
-| A8 | Customers will use a portal to fix their own data exceptions | Prototype tests with end customers | 0 / 2 |
-| A9 | ≥ 85% mapping accuracy is achievable on real files | Eval gold set | 0 / 2 |
+| A1 | The first ERP product company will provide API documentation and sandbox access | Design-partner LOI; inspect API coverage, rate limits, auth, test data, write operations | 0 |
+| A2 | The product company will standardise at least some implementation workflows | Interview implementation leaders; map repeated tasks; agree playbooks and validation rules | 0 |
+| A3 | Customer master data is available in Excel/CSV (or parsable exports) | Review representative anonymised files | 0 |
+| A4 | Product configuration operations can be exposed through supported APIs | API spike on the sandbox: read/write, permissions, read-back | 0 |
+| A5 | There is a measurable financial incentive to adopt a separate implementation platform | Baseline hours/cost, rework and cycle time; willingness to pay; pilot conversion | 0 / 4 |
+| A6 | Data migration + configuration are ≥ 30% of implementation effort for the ICP | Collect implementation hour breakdowns | 0 |
+| A7 | The product company's customers will use a portal to fix their own data and approve | Prototype tests with 3–5 end customers | 0 / 2 |
+| A8 | A new product's adapter can be built in ≤ 8 weeks (≤ 4 by GA) | Track actual effort on the design partner + Odoo adapters | 1–5 |
 
 ## 3. Open questions for the founder
 
-Answers to these will change the plan. Please respond when ready.
-
-1. ~~**First customer type.**~~ **Answered 1 Nov 2026: implementation partners.**
-2. **First ERP.** Which ERP ecosystem does your network know best: Business Central, Odoo, SAP Business One, NetSuite, Tally/Zoho-centric Indian ERPs, or another? Do you have a specific implementation partner in mind as design partner #1?
-3. **Your background.** Are you an ERP practitioner yourself (which ERPs and modules)? This decides who authors the first knowledge packs.
-4. **Geography.** Is the first market India, GCC, UK/EU or US? This drives hosting region, localisation (GST/VAT) and pricing.
-5. **Team and funding.** Are you funding Phase 0 yourself? Do you have a technical co-founder or tech lead? Is the ₹36–58 L budget fixed, or can it move to the ₹67 L–1 Cr range for a stronger MVP?
-6. **Large SIs.** Is "major ERP implementation companies" meant as large global SIs (Accenture, Infosys, TCS…) in the near term? They need private deployment and long sales cycles, so the plan treats them as year 2+.
-7. **Company IP and entity.** Is there an existing company, or will a new one be set up? Who owns the code? (This affects contractors and the GitHub org.)
-8. **AI provider preferences or constraints** (e.g., customers requiring Azure OpenAI, a data-residency need for model hosting)?
-9. **Brand.** Are you committed to the name "UNIFY", or open to a variant if the trademark search shows conflicts?
-10. **Dashboards.** Should the two HTML mock-ups (internal Control Tower and Customer Delivery Workspace) be treated as the target UX for the MVP, or as later-phase (P1) screens? The plan currently puts the customer action centre in the MVP and the full Control Tower at GA.
+1. ~~**Customer type.**~~ **Answered 1 Nov 2026: ERP product companies, ERP first, other B2B products later.**
+2. **Design partner.** Does your SME friend work at (or know) an ERP product company that could be design partner #1? Which product is it, roughly how many implementations a year does it do, and does it have APIs and sandboxes?
+3. **The SME's role.** Will your friend join as co-founder, advisor or part-time domain lead? Their implementation knowledge is central to the playbooks and knowledge packs.
+4. **Your background.** What is your role: product, technology or business? This decides the first hires (e.g., whether we need a technical co-founder).
+5. **Geography.** Is the first market India? Any specific regions or industries (distribution, manufacturing, pharma, retail…)?
+6. **Team and funding.** Are you self-funding Phase 0? Is the blueprint's ₹36–58 L budget fixed, or can it move to ~₹67 L–1 Cr for a stronger MVP (see [13](13-team-budget.md))?
+7. **Company and IP.** Is there an existing company? Who owns the code and the SME's material?
+8. **AI providers.** Any preferences or constraints (e.g., Azure OpenAI required by some customers, data residency for models)?
+9. **Brand.** Committed to "UNIFY", or open to a variant if the trademark search shows conflicts?
+10. **Dashboards.** Should the two HTML mock-ups be the target UX for MVP? (The plan puts their core in MVP and the full versions at GA.)
